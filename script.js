@@ -1,7 +1,8 @@
 
- 
- let nombre = prompt("Entrez un nombre :");
+let robot = "Machine : "
 
+ console.log(robot + "what's your name : ")
 
+ let user = prompt("user : ");
 
- console.log(nombre);
+ console.log(robot + "welcome "+ user);
