@@ -1,8 +1,13 @@
 
 let robot = "Machine : "
 
- console.log(robot + "write number : ")
+ console.log(robot + "Write Number : ")
 
  let nb = prompt("number : ");
 
- console.log(robot + 1/nb);
+ if ( nb >= 0) {
+    console.log(robot + "the number positif ");
+ }else{
+    console.log(robot + "the number négatif ");
+ }
+
