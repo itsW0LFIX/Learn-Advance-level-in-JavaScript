@@ -3,12 +3,12 @@ let robot = "Machine : "
 
  console.log(robot + "Write Number : ")
 
- let nb1 = prompt("number 1 : ");
- let nb2 = prompt("number 2 : ");
+ let nb = prompt("number : ");
 
- if ( nb1 + nb2 >= 0) {
-    console.log(robot + "the numbers positif ");
+ if ( nb > 0) {
+    console.log(robot + "the number positif ");
+ }else if (nb < 0){
+    console.log(robot + "the number négatif ");
  }else{
-    console.log(robot + "the numbers négatif ");
+    console.log(robot + "the number is 0 ");
  }
-
