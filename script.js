@@ -2,13 +2,16 @@ let robot = "Machine : "
 
  console.log(robot + "Write Number : ")
 
- let nb1 = prompt("number 1 : ");
- let nb2 = prompt("number 2 : ");
+ let nb = prompt("number : ");
 
- if ( nb1 + nb2 > 0) {
-    console.log(robot + "the numbers positif ");
- }else if (nb1 + nb2 < 0) {  
-    console.log(robot + "the numbers négatif ");
+ if ( nb >= 6 && nb <= 7) {
+    console.log(robot + "poussin");
+ }else if (nb >= 8 && nb <= 9){
+    console.log(robot + "pupille");
+ }else if (nb >= 10 && nb <= 11){
+    console.log(robot + "minime");
+ }else if (nb >= 12) {
+    console.log(robot + "cadet");
  }else{
-    console.log(robot + "the number is 0 ");
+    console.log(robot + "you are " + nb);
  }
