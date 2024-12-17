@@ -1,8 +1,8 @@
 
 let robot = "Machine : "
 
- console.log(robot + "what's your name : ")
+ console.log(robot + "write number : ")
 
- let user = prompt("user : ");
+ let nb = prompt("number : ");
 
- console.log(robot + "welcome "+ user);
+ console.log(robot + 1/nb);
