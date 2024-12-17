@@ -1,17 +1,23 @@
-let robot = "Machine : "
+let robot = "Machine : ";
 
- console.log(robot + "Write Number : ")
+console.log(robot + "Write Number : ")
 
- let nb = prompt("number : ");
+let sex = prompt("your sex : ");
 
- if ( nb >= 6 && nb <= 7) {
-    console.log(robot + "poussin");
- }else if (nb >= 8 && nb <= 9){
-    console.log(robot + "pupille");
- }else if (nb >= 10 && nb <= 11){
-    console.log(robot + "minime");
- }else if (nb >= 12) {
-    console.log(robot + "cadet");
- }else{
-    console.log(robot + "you are " + nb);
- }
+let age = prompt("your age : ");
+
+if (sex == "men") {
+    if (age >= 20) {
+        console.log("you need pay tax")
+    } else {
+        console.log("do not pay tax");
+    }
+} else if (sex == "women") {
+    if (age >= 18 && age <= 35) {
+        console.log("you need pay tax")
+    } else {
+        console.log("do not pay tax");
+    }
+}else{
+    console.log("who are you");   
+}
