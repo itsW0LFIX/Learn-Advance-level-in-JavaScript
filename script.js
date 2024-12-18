@@ -1,23 +1,15 @@
-let robot = "Machine : ";
+let robot = "Machine : ",nbofrobot= 3;
 
-console.log(robot + "Write Number : ")
+ console.log(robot + "Write Number 1 to 3 : ")
 
-let sex = prompt("your sex : ");
+ while (true) { // Loop runs indefinitely
+    let nb = prompt("Number: "); // Prompt the user for a number
+    nb = parseInt(nb, 10); // Convert the input to a number
 
-let age = prompt("your age : ");
-
-if (sex == "men") {
-    if (age >= 20) {
-        console.log("you need pay tax")
+    if (nb === nbofrobot) { // Check if the guessed number is correct
+        console.log(robot + "It's the number!");
+        break; // Exit the loop (close it)
     } else {
-        console.log("do not pay tax");
+        console.log(robot + "Not the number.");
     }
-} else if (sex == "women") {
-    if (age >= 18 && age <= 35) {
-        console.log("you need pay tax")
-    } else {
-        console.log("do not pay tax");
-    }
-}else{
-    console.log("who are you");   
 }
