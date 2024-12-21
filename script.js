@@ -4,6 +4,8 @@ let robot = "Machine : ",nbofrobot= 10;
  let nb = prompt("Number: "); // Prompt the user for a number
  nb = parseInt(nb, 10); // Convert the input to a number
  
- for (let i = 1; i <= 10; i++) {
-    console.log(nb + i);
+ let compteur = 1;
+ while (compteur <= 10) {
+    console.log(nb + compteur);
+    compteur++;
 }
