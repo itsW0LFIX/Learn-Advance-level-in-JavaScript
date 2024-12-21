@@ -6,6 +6,6 @@ let robot = "Machine : ",nbofrobot= 10;
  
  let compteur = 1;
  while (compteur <= 10) {
-    console.log(nb + compteur);
+    console.log(nb +" x "+ compteur +" = "+ nb*compteur);
     compteur++;
 }
