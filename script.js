@@ -1,11 +1,8 @@
-let robot = "Machine : ",nbofrobot= 10;
+let nb = 1,save = 0;
 
- console.log(robot + "Write Number 1 to 3 : ")
- let nb = prompt("Number: "); // Prompt the user for a number
- nb = parseInt(nb, 10); // Convert the input to a number
- 
- let compteur = 1;
- while (compteur <= 10) {
-    console.log(nb +" x "+ compteur +" = "+ nb*compteur);
-    compteur++;
+
+
+for (let i = 0; i < 5; i++) {
+    save += nb + i;
 }
+console.log(save);
